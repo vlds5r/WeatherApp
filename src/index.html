@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!------CARD------>
+    <div class="card">
+        <!------SEARCH------>
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Name of the city" spellcheck="false">
+            <button><img src="assets/img/search.png" alt="Search button"></button>
+        </div>
+        <div class="error">
+            <p>City not found</p>
+        </div>
+        <!------WEATHER DISPLAY------>
+        <div class="weather">
+            <img src="assets/img/rain.png" alt="rain_icon" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="assets/img/humidity.png" alt="humidity-icon">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="assets/img/wind.png" alt="wind-icon">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maps">
+            <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=Praha&key=[YOUR_API_KEY]"></iframe> <!--enter your API key from google-->
+        </div>
+    </div>
+    <!------SCRIPTS------>
+    <script src="js/app.js"></script>
+</body>
+</html>
